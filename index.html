@@ -4,243 +4,32 @@
         <title>Sarii's Munting Kusina</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
         
         <style>
-        @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap');
-        @media screen and (max-width:875px){ 
+            .navbar{
+                background-color: #FFF4EC;
+                border-bottom: 2px solid #4B4237;
+            }
+            .navbar-brand{
+                margin-left: 100px;
+            }
+            #imgLogo{
+                height: 60px;
+            }
+            .navbar-nav{
+                margin-right: 100px;
+                font-size: 30px;
+                font-family: 'Poppins', sans-serif;
+            }
             body{
                 background-color: #FFF4EC;
                 margin: 0px;
             }
-            .header{
-                position: fixed;
-                margin-top: -26px;
-                width:100%;
-                background-color: #FFF4EC;
-                border-bottom: 2px solid #4B4237;
-                box-shadow: 0px -3px 15px 0px #000000;
-                z-index: 1;
-            }
-            #imgLogo{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top:13px;
-                margin-bottom: 15px;
-                width: auto;
-            }
-            .panel{
-                position: relative;
-                width: 100%;
-                top: 120px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .menu{
-                position: relative;
-                height: 220px;
-                margin-right: 10%;
-                margin-left: 10%;
-                margin-bottom: 650px;
-            }
-            .footer{
-                background-color: #4B4237;
-                position:relative;
-                margin-top: -170px;
-                height:60px;
-                width:100%;  
-            }
-            hr{
-                margin-top:-20px;
-                border: 1px solid #4B4237;
-                margin-bottom: 15px;
-            }
-            .menuCategoryName{
-                font-family: 'Open Sans';
-                font-weight: 100;
-                font-size: 39px;
-                color: #4B4237;
-            }
-            .item{
-                display: inline-block;
-                position:static;
-                width:34%;
-                height: 310px;
-                margin-left: 5%;
-                margin-right: 3px;
-                margin-bottom: 40px;
-                border-radius: 10px;
-                background-color: #FFFFFF;
-                box-shadow: 0px 0px 20px -10px #000000;
-                padding: 15px;
-            }
-            .imgMenu{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                bottom: 50px;
-                height: 55%;
-                width: 100%;
-                border-radius: 5px;
-            }
-            .itemPrice{
-                font-family: 'Open Sans';
-                font-weight: 300;
-                font-size:18px;
-                color: #4B4237;
-            }
-            .itemName{
-                font-family: 'Open Sans';
-                font-weight: 800;
-                font-size: 13px;
-                color: #4B4237;
-                margin-top: 9px;
-            }
-            .itemClassify{
-                margin-top: -10px;
-                font-family: 'Open Sans';
-                font-weight: 600;
-                font-size: 10px;
-                color: #4B4237;
-            }
-            .LogoLink{
-                display: inline-block;
-                position: static;
-                margin-top:10px;
-                float: right;
-            }
-            .logo{
-                margin-left: -20px;
-                margin-right: 30px;
-            }
-        }
-        @media screen and (min-width:876px){ 
-            body{
-                background-color: #FFF4EC;
-                margin: 0px;
-            }
-            .header{
-                position: fixed;
-                margin-top: -26px;
-                width:100%;
-                background-color: #FFF4EC;
-                border-bottom: 2px solid #4B4237;
-                box-shadow: 0px -3px 15px 0px #000000;
-                z-index: 1;
-            }
-            #imgLogo{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top:13px;
-                margin-bottom: 15px;
-                width: auto;
-            }
-            .panel{
-                position: relative;
-                width: 100%;
-                top: 120px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .menu{
-                position: relative;
-                height: 200px;
-                margin-right: 10%;
-                margin-left: 10%;
-                margin-bottom: 650px;
-            }
-            .footer{
-                background-color: #4B4237;
-                position:relative;
-                top: 10px;
-                height:60px;
-                width:100%;  
-            }
-            hr{
-                margin-top:-20px;
-                border: 1px solid #4B4237;
-                margin-bottom: 15px;
-            }
-            .menuCategoryName{
-                font-family: 'Open Sans';
-                font-weight: 100;
-                font-size: 39px;
-                color: #4B4237;
-            }
-            .item{
-                display: inline-block;
-                position:static;
-                width:45%;
-                height: 330px;
-                margin-right: 3px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                background-color: #FFFFFF;
-                box-shadow: 0px 0px 20px -10px #000000;
-                padding: 15px;
-            }
-            .imgMenu{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                bottom: 50px;
-                height: 55%;
-                width: 100%;
-                border-radius: 5px;
-            }
-            .itemPrice{
-                font-family: 'Open Sans';
-                font-weight: 300;
-                font-size:25px;
-                color: #4B4237;
-            }
-            .itemName{
-                font-family: 'Open Sans';
-                font-weight: 800;
-                color: #4B4237;
-                margin-top: 9px;
-            }
-            .itemClassify{
-                margin-top: -20px;
-                font-family: 'Open Sans';
-                font-weight: 600;
-                color: #4B4237;
-            }
-            .LogoLink{
-                display: inline-block;
-                position: static;
-                margin-top:10px;
-                float: right;
-            }
-            .logo{
-                margin-left: -20px;
-                margin-right: 30px;
-            }
-        }
-        @media screen and (min-width:1850px){
-            body{
-                background-color: #FFF4EC;
-                margin: 0px;
-            }
-            .header{
-                position: fixed;
-                margin-top: -26px;
-                width:100%;
-                background-color: #FFF4EC;
-                border-bottom: 2px solid #4B4237;
-                box-shadow: 0px -3px 15px 0px #000000;
-                z-index: 1;
-            }
-            #imgLogo{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top:13px;
-                margin-bottom: 15px;
-                width: auto;
-            }
+            
             .panel{
                 position: relative;
                 width: 100%;
@@ -312,7 +101,6 @@
                 color: #4B4237;
             }
             .LogoLink{
-                display: inline-block;
                 position: static;
                 margin-top:10px;
                 float: right;
@@ -321,14 +109,26 @@
                 margin-left: -20px;
                 margin-right: 30px;
             }
-            }
         </style>  
     </head>
 
     <body>
-        <div class="header">
-            <img id="imgLogo" src="./Assets/SariiLogo.png" alt="logo">
-        </div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img id="imgLogo" src="./Assets/SariiLogo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="nav navbar-nav ms-auto">
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div class="panel">
             <div class= "menu">
@@ -432,5 +232,7 @@
                 <a href="https://www.instagram.com/sarii.s_munting_kusina/" target="_blank"><img class="logo" src="./Assets/IGLogo.png" alt="IG"></a>
             </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
 </html>
