@@ -17,7 +17,7 @@
                 display: block;
             }
             .navbar{
-                position: relative;
+                z-index: 4;
                 background-color: white;
                 border-bottom: 1px solid #695645;
             }
@@ -46,7 +46,7 @@
                 overflow:hidden
             }
             #BannerMain{
-                top: 5%;
+                top: 3%;
                 left: 7%;
                 position: absolute; 
             }
@@ -76,7 +76,7 @@
 
     <body>
         <div class="parent">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img id="imgLogo" src="./Assets/SariiLogo.png" alt="logo">
