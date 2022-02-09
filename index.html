@@ -19,21 +19,22 @@
             .navbar{
                 position: relative;
                 background-color: white;
-                border-bottom: 1px solid #4B4237;
+                border-bottom: 1px solid #695645;
             }
             .navbar-brand{
-                margin-left: 250px;
+                margin-left: 4.5%;
             }
             #imgLogo{
                 height: 60px;
             }
             .navbar-nav{
-                margin-right: 250px;
+                margin-right: 4.5%;
+                color: #695645;
                 font-size: 25px;
                 font-family: 'Poppins', sans-serif;
             }
             .navbar-toggler{
-                margin-right: 250px;
+                margin-right: 4.5%;
             }
             .nav-link{
                 margin-left: 35px;
@@ -41,11 +42,34 @@
             #MainPage{
                 position: relative;
                 width: fit-content;
+                padding:0;
+                overflow:hidden
             }
-            #imgMain{
+            #BannerMain{
                 margin-left: 50;
                 margin-right: 50;
             }
+            #BannerMainText{
+                position: absolute;
+            }
+            #BannerButton{
+                position: absolute;
+                margin-top: 22.5%;
+                margin-left: 3.5%;
+                font-family: 'Poppins', sans-serif;
+                font-size: 150%;
+                font-weight: 600;
+                text-align: center;
+                padding: 1% 1%;
+                border: 3px solid #FFECDD;
+                border-radius: 40px;
+                color: #FFECDD;
+            }
+            #BannerButton:hover{
+                background-color: #FFECDD;
+                color: #695645;
+            }
+
         </style>  
     </head>
 
@@ -72,7 +96,15 @@
             
             <div class="container-fluid" id="MainPage">
                 <div class="row">
-                    <img class="img-fluid" id="imgMain" src="./Assets/backgroundMainPage.png" alt="">
+                    <div class="MainPageBanner">
+                        <img class="img-fluid" id="BannerMainText" src="./Assets/imgMainPageText.png" alt="">
+                        <div class="container-fluid">
+                            <a class="btn btn-outline-primary" id="BannerButton" href="./menu.html" role="button">Check our Products</a>
+                        </div>
+                        
+                        <img class="img-fluid" id="BannerMain" src="./Assets/imgMainPage.png" alt="">
+                    </div>
+                    
                 </div>
             </div>
         </div>
