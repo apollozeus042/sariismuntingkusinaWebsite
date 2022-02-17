@@ -10,237 +10,101 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
         
         <style>
-            .navbar{
+            body{
                 background-color: white;
-                border-bottom: 1px solid #4B4237;
+            }
+            .parent{
+                display: block;
+            }
+            .navbar{
+                z-index: 4;
+                background-color: white;
+                border-bottom: 1px solid #695645;
             }
             .navbar-brand{
-                margin-left: 250px;
+                margin-left: 4.5%;
             }
             #imgLogo{
                 height: 60px;
             }
             .navbar-nav{
-                margin-right: 250px;
+                margin-right: 4.5%;
+                color: #695645;
                 font-size: 25px;
                 font-family: 'Poppins', sans-serif;
             }
             .navbar-toggler{
-                margin-right: 250px;
+                margin-right: 4.5%;
             }
             .nav-link{
                 margin-left: 35px;
             }
-            body{
-                background-color: #FFF4EC;
-                margin: 0px;
-            }
-            
-            .panel{
+            #MainPage{
                 position: relative;
+                margin: 0;
+                padding:0;
+                overflow:hidden;
+                background-color: white
+            }
+            #categorySection{
+                margin-bottom: 50px;
                 width: 100%;
-                top: 135px;
-                margin-left: auto;
-                margin-right: auto;
+                background-color: #FFF4EC;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                border-radius: 0px 0px 20px 20px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.308);
             }
-            .menu{
-                position: relative;
-                height: 100px;
-                margin-right: 15%;
-                margin-left: 15%;
-                margin-bottom: 365px;
+            #categorySectionContent{
+                
             }
             .footer{
-                background-color: #4B4237;
-                position:relative;
-                top: 240px;
-                height:60px;
-                width:100%;  
-            }
-            hr{
-                margin-top:-20px;
-                border: 1px solid #4B4237;
-                margin-bottom: 15px;
-            }
-            .menuCategoryName{
-                font-family: 'Open Sans';
-                font-weight: 100;
-                font-size: 39px;
-                color: #4B4237;
-            }
-            .item{
-                display: inline-block;
-                position:static;
-                width:15%;
-                height: 330px;
-                margin-right: 50px;
-                border-radius: 10px;
-                background-color: #FFFFFF;
-                box-shadow: 0px 0px 20px -10px #000000;
-                padding: 15px;
-            }
-            .imgMenu{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                bottom: 50px;
-                height: 55%;
-                width: 100%;
-                border-radius: 5px;
-            }
-            .itemPrice{
-                font-family: 'Open Sans';
-                font-weight: 300;
-                font-size:25px;
-                color: #4B4237;
-            }
-            .itemName{
-                font-family: 'Open Sans';
-                font-weight: 800;
-                color: #4B4237;
-                margin-top: 9px;
-            }
-            .itemClassify{
-                margin-top: -20px;
-                font-family: 'Open Sans';
-                font-weight: 600;
-                color: #4B4237;
-            }
-            .LogoLink{
-                position: static;
-                margin-top:10px;
-                float: right;
-            }
-            .logo{
-                margin-left: -20px;
-                margin-right: 30px;
+                text-align: center;
+                color: #FFF4EC;;
+                background-color: #695645;
             }
         </style>  
     </head>
 
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img id="imgLogo" src="./Assets/SariiLogo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="#navbarItems" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarItems">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="./index.html">Home</a>
-                        <a class="nav-link" href="./menu.html">Menu</a>
-                        <a class="nav-link" href="#">About</a>
-                        <a class="nav-link" href="#">Contact Us</a>
+        <div class="parent">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img id="imgLogo" src="./Assets/SariiLogo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="#navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarItems">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="./index.html">Home</a>
+                            <a class="nav-link" href="./menu.html">Menu</a>
+                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container-fluid" id="MainPage">
+                <div class="row">
+                    <div class="container" id="categorySection">
+                        
+                    </div>
+                    <div class="container" id="categorySection">
+                        
                     </div>
                 </div>
             </div>
-        </nav>
-
-        <div class="panel">
-            <div class= "menu">
-                <h1 class="menuCategoryName">Cookies</h1>
-                <hr>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/cookies.jpg" alt="Chocolate Chip Cookies">
-                    <h2 class="itemName">Chocolate Chip Cookies </h2>
-                    <h3 class="itemClassify">(5-in-a-box)</h3>
-                    <h2 class="itemPrice">PHP 200.00</h2>
+            <footer class="footer mt-sm-5 pt-md-4 py-md-2">
+                <div class="container">
+                    <p>Sarii's Munting Kusina · 2018 </p>
                 </div>
-
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/crinkles.jpg" alt="Chocolate Crinkles">
-                    <h2 class="itemName">Chocolate Crinkles </h2>
-                    <h3 class="itemClassify">(6-in-a-box)</h3>
-                    <h2 class="itemPrice">PHP 150.00</h2>
-                </div>
-
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/oreoCookies.jpg" alt="Oreo Cream Cheese Cookies">
-                    <h2 class="itemName">Oreo Cream Cheese Cookies </h2>
-                    <h3 class="itemClassify">(4-in-a-box)</h3>
-                    <h2 class="itemPrice">PHP 120.00</h2>
-                </div>
-            </div>
-
-            <div class= "menu">
-                <h1 class="menuCategoryName">Loaf and Bread</h1>
-                <hr>
-
-
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/bananaLoaf.jpg" alt="Banana Loaf">
-                    <h2 class="itemName">Banana Loaf</h2>
-                    <h3 class="itemClassify"> <br> </h3>
-                    <h2 class="itemPrice"><br>PHP 200.00</h2>
-                </div>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/ensaymada.jpg" alt="Ensaymada">
-                    <h2 class="itemName">Ensaymada</h2>
-                    <h3 class="itemClassify">(4-in-a-box)</h3>
-                    <h2 class="itemPrice"><br>PHP 160.00</h2>
-                </div>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/cheeserolls.jpg" alt="Cheese Rolls">
-                    <h2 class="itemName">Cheese Rolls </h2>
-                    <h3 class="itemClassify">(4-in-a-box)</h3>
-                    <h2 class="itemPrice"><br>PHP 160.00</h2>
-                </div>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/spanishBread.jpg" alt="Spanish Bread">
-                    <h2 class="itemName">Spanish Bread </h2>
-                    <h3 class="itemClassify">(6-in-a-box)</h3>
-                    <h2 class="itemPrice"><br>PHP 75.00</h2>
-                </div>
-            </div>
-            <div class= "menu">
-                <h1 class="menuCategoryName">Pasta</h1>
-                <hr>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/penne.jpg" alt="Penne">
-                    <h2 class="itemName">Penne </h2>
-                    <h3 class="itemClassify">(Party Tray)</h3>
-                    <h2 class="itemPrice"><br>PHP 1,200.00</h2>
-                </div>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/noImage.png" alt="Macaroni">
-                    <h2 class="itemName">Macaroni </h2>
-                    <h3 class="itemClassify">(Party Tray)</h3>
-                    <h2 class="itemPrice"><br>PHP 1,200.00</h2>
-                </div>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/noImage.png" alt="Spaghetti">
-                    <h2 class="itemName">Spaghetti </h2>
-                    <h3 class="itemClassify">(Party Tray)</h3>
-                    <h2 class="itemPrice"><br>PHP 1,200.00</h2>
-                </div>
-            </div>
-            <div class= "menu">
-                <h1 class="menuCategoryName">Cakes and Pies</h1>
-                <hr>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/cheesecake.jpg" alt="No-Bake Cheesecake">
-                    <h2 class="itemName"> No-Bake Cheesecake </h2>
-                    <h3 class="itemClassify">(6x2 Round Tin Can)</h3>
-                    <h2 class="itemPrice">PHP 550.00</h2>
-                </div>
-                <div class="item">
-                    <img class="imgMenu" src="./Assets/mangoGraham.jpg" alt="Mango Graham Pie">
-                    <h2 class="itemName">Mango Graham Pie</h2>
-                    <h3 class="itemClassify">(6x2 Round Tin Can)</h3>
-                    <h2 class="itemPrice">PHP 550.00</h2>
-                </div>
-            </div>
+            </footer>
         </div>
-
-        <div class="footer">
-            <div class="LogoLink">
-                 <a href="https://www.facebook.com/SariiMuntingKusina/" target="_blank"><img class="logo" src="./Assets/FBLogo.png" alt="FB"></a>
-                <a href="https://www.instagram.com/sarii.s_munting_kusina/" target="_blank"><img class="logo" src="./Assets/IGLogo.png" alt="IG"></a>
-            </div>
-        </div>
-
+        
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
