@@ -12,7 +12,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script> 
             $(document).ready(function(){
-                $("#BannerButton").fadeIn(1000);
+                $("#BannerMainText").fadeIn(1000);
+                $("#BannerButton").fadeIn(3500);
             });
         </script>
 
@@ -56,8 +57,12 @@
                 left: 7%;
                 position: absolute; 
             }
+            #BannerMainText{
+               display: none;
+            }
 
             #BannerButton{
+                display: none;
                 font-family: 'Poppins', sans-serif;
                 font-size: 150%;
                 font-weight: 600;
